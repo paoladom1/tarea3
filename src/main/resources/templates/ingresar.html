@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Ingreso de nuevo alumno</title>
+</head>
+<body>
+	<h1>Ingreso de nuevo alumno</h1>
+	<form name="formulario" th:action="@{/resultado}" method="post">
+	<p>
+		Nombres: <input type="text" id="inputNombre" placeholder="Nombre" name="name">
+	</p>
+	<p>
+		Apellidos: <input type="text" id="inputApellidos" placeholder="Apellidos" name="lastname">
+	</p>
+	<p>
+		Fecha de Nacimiento: <input type="text" id="inputFechaNac" placeholder="dd/mm/aaaa" name="dateofbirth">
+	</p>
+	<p>
+		Lugar de Nacimiento: <input type="text" id="inputLugarNac" placeholder="Lugar de Nacimiento" name="placeofbirth">
+	</p>
+	<p>
+		Instituto o colegio de procedencia: <input type="text" id="inputColegio" placeholder="Instituto o colegio de procedencia" name="highschool">
+	</p>
+	<p>
+		Tel&eacute;fono fijo: <input type="tel" id="inputFijo" placeholder="N&uacute;mero de tel&eacute;fono" name="phonenumber">
+	</p>
+	<p>
+		Tel&eacute;fono m&oacute;vil: <input type="tel" id="inputMovil" placeholder="N&uacute;mero de celular" name="cellphone">
+	</p>
+	<p>
+		<input type="submit" value="Guardar Alumno"/>
+	</p>
+	</form>
+</body>
+</html>

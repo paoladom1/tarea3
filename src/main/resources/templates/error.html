@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Error</title>
+</head>
+<body>
+	<h1>Errores</h1>
+	<ol>
+		<li th:if="${name != null}">
+			<span th:text="${name}"> </span>
+		</li>
+		<li th:if="${lastname != null}">
+			<span th:text="${lastname}"> </span>
+		</li>
+		<li th:if="${dateofbirth != null}">
+			<span th:text="${dateofbirth}"> </span>
+		</li>
+		<li th:if="${placeofbirth != null}">
+			<span th:text="${placeofbirth}"> </span>
+		</li>
+		<li th:if="${highschool != null}">
+			<span th:text="${highschool}"> </span>
+		</li>
+		<li th:if="${phonenumber != null}">
+			<span th:text="${phonenumber}"> </span>
+		</li>
+		<li th:if="${cellphone != null}">
+			<span th:text="${cellphone}"> </span>
+		</li>
+	</ol>
+</body>
+</html>
